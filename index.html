@@ -1,118 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SCENIC EL DORADO INC | Community & Scenic Preservation</title>
 
-<meta name="description" content="SCENIC EL DORADO INC is a 501(c)(3) nonprofit dedicated to preserving natural beauty, promoting community engagement, and supporting sustainable development in El Dorado, Kansas.">
+<title>SCENIC EL DORADO INC | Community & Environmental Nonprofit</title>
+
+<meta name="description" content="SCENIC EL DORADO INC is a 501(c)(3) nonprofit organization dedicated to protecting natural beauty, supporting community development, and promoting environmental stewardship in El Dorado, Kansas.">
+
+<meta name="keywords" content="El Dorado nonprofit, environmental nonprofit Kansas, Scenic El Dorado, community development Kansas, 501c3 nonprofit">
+
+<link rel="icon" type="image/svg+xml" href="#favicon">
 
 <style>
 
 body{
 font-family:Arial,Helvetica,sans-serif;
 margin:0;
-background:#f4f7f8;
+background:#f4f7f6;
 color:#333;
 line-height:1.6;
 }
 
 header{
-background:#1c6e5f;
+background:#0a5c44;
 color:white;
 padding:20px;
 }
 
-header h1{
-margin:0;
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
 }
 
-nav{
-background:#144c42;
-padding:10px;
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+padding:0;
 }
 
 nav a{
 color:white;
-margin:10px;
 text-decoration:none;
 font-weight:bold;
 }
 
-nav a:hover{
-text-decoration:underline;
-}
-
 .hero{
-background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+background-size:cover;
 color:white;
 padding:120px 20px;
 text-align:center;
 }
 
-section{
-padding:60px 20px;
+.section{
 max-width:1100px;
 margin:auto;
+padding:60px 20px;
 }
 
-h2{
-color:#1c6e5f;
+.section h2{
+color:#0a5c44;
 margin-bottom:20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
 background:white;
 padding:25px;
-margin:15px 0;
-border-radius:6px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
 footer{
-background:#222;
-color:#ccc;
+background:#0a5c44;
+color:white;
 padding:40px 20px;
 }
 
-footer a{
-color:#9be3d6;
-text-decoration:none;
-}
-
-footer a:hover{
-text-decoration:underline;
-}
-
-.contact{
-background:#e9f5f3;
-padding:30px;
-border-radius:6px;
-}
-
-button{
-background:#1c6e5f;
-color:white;
-border:none;
-padding:12px 20px;
-border-radius:4px;
-font-size:16px;
-cursor:pointer;
-}
-
-button:hover{
-background:#145348;
+.footer-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 }
 
 .policy{
-font-size:14px;
-color:#444;
+background:white;
+padding:40px;
+margin-top:40px;
+border-radius:8px;
+}
+
+button{
+background:#0a5c44;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#083f30;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:22px;
+font-weight:bold;
 }
 
 </style>
@@ -121,208 +132,321 @@ color:#444;
 <body>
 
 <header>
-<h1>SCENIC EL DORADO INC</h1>
-<p>Preserving Natural Beauty • Supporting Community • Inspiring Sustainability</p>
-</header>
 
 <nav>
-<a href="#about">About</a>
-<a href="#mission">Mission</a>
-<a href="#programs">Programs</a>
-<a href="#volunteer">Volunteer</a>
-<a href="#donate">Donate</a>
-<a href="#policies">Policies</a>
-<a href="#contact">Contact</a>
+
+<div class="logo">
+
+<svg width="40" height="40" viewBox="0 0 100 100">
+<circle cx="50" cy="50" r="45" fill="#ffffff"/>
+<path d="M10 60 L40 30 L60 55 L80 25 L90 70 L10 70 Z" fill="#0a5c44"/>
+</svg>
+
+SCENIC EL DORADO INC
+
+</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#programs">Programs</a></li>
+<li><a href="#impact">Impact</a></li>
+<li><a href="#donate">Support</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
 </nav>
 
-<div class="hero">
-<h1>Protecting the Scenic Beauty of El Dorado</h1>
-<p>Community driven nonprofit organization dedicated to preservation, sustainability, and public engagement.</p>
-</div>
+</header>
 
-<section id="about">
-<h2>About SCENIC EL DORADO INC</h2>
+<section class="hero">
 
-<div class="card">
-<p>
-SCENIC EL DORADO INC is a community-focused nonprofit organization committed to protecting the scenic beauty, natural landscapes, and environmental heritage of El Dorado, Kansas and surrounding communities. Through partnerships, volunteer initiatives, and public education, the organization works to preserve local environments and promote responsible stewardship of natural resources.
-</p>
+<h1>Protecting Natural Beauty & Strengthening Community</h1>
 
 <p>
-Our organization believes that healthy ecosystems and vibrant communities go hand in hand. We collaborate with local residents, schools, civic organizations, and businesses to ensure that future generations can enjoy the natural beauty and environmental health of our region.
+SCENIC EL DORADO INC is a nonprofit organization committed to protecting
+natural landscapes, promoting environmental stewardship, and supporting
+community development initiatives in El Dorado, Kansas and surrounding areas.
 </p>
 
-<p>
-SCENIC EL DORADO INC is recognized as a <strong>501(c)(3) nonprofit organization</strong> under United States federal law. Donations made to our organization may be tax-deductible to the extent allowed by law.
-</p>
+<a href="#donate">
+<button>Support Our Mission</button>
+</a>
 
-</div>
 </section>
 
-<section id="mission">
-<h2>Our Mission</h2>
+<section class="section" id="about">
 
-<div class="grid">
+<h2>About Our Nonprofit</h2>
+
+<p>
+
+SCENIC EL DORADO INC is a recognized **501(c)(3) nonprofit organization**
+dedicated to preserving natural environments, improving public spaces,
+and encouraging sustainable community growth.
+
+Our organization works with local residents, volunteers,
+community leaders, and environmental advocates to promote responsible
+development while protecting the scenic landscapes that define our region.
+
+</p>
+
+<p>
+
+Through education, conservation initiatives, and community engagement,
+we strive to ensure that future generations can enjoy the natural beauty
+and cultural heritage of El Dorado and the surrounding Kansas communities.
+
+</p>
+
+<p>
+
+As a nonprofit organization, SCENIC EL DORADO INC operates exclusively
+for charitable, educational, and environmental purposes in accordance
+with U.S. nonprofit regulations governing tax-exempt 501(c)(3) organizations.
+
+</p>
+
+</section>
+
+<section class="section" id="programs">
+
+<h2>Our Programs</h2>
+
+<div class="cards">
 
 <div class="card">
+
 <h3>Environmental Preservation</h3>
+
 <p>
-We work to preserve scenic landscapes, parks, and green spaces in the El Dorado area. By promoting conservation and responsible land stewardship, we help maintain natural ecosystems and biodiversity.
+We support conservation projects designed to protect local landscapes,
+green spaces, and wildlife habitats. Our work focuses on long-term
+environmental sustainability and responsible land stewardship.
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>Community Engagement</h3>
+
 <p>
-SCENIC EL DORADO INC encourages residents to participate in environmental stewardship through volunteer programs, community projects, and public events that strengthen local pride and environmental responsibility.
+We organize volunteer opportunities, educational workshops, and public
+events that encourage residents to participate in community development
+and environmental protection.
 </p>
+
 </div>
 
 <div class="card">
-<h3>Sustainable Development</h3>
+
+<h3>Education & Awareness</h3>
+
 <p>
-We advocate for responsible development practices that balance economic growth with environmental sustainability, ensuring that progress does not come at the expense of natural beauty.
+Our educational outreach programs provide resources that promote
+sustainable practices, environmental awareness, and civic engagement.
 </p>
+
 </div>
 
-</div>
-</section>
-
-<section id="programs">
-<h2>Programs & Initiatives</h2>
-
-<div class="card">
-<h3>Community Beautification Projects</h3>
-<p>
-Our volunteers organize clean-up events, tree planting activities, and public space improvement initiatives that enhance the appearance and environmental health of local neighborhoods.
-</p>
-</div>
-
-<div class="card">
-<h3>Environmental Education</h3>
-<p>
-SCENIC EL DORADO INC collaborates with schools and community groups to educate young people and residents about conservation, environmental protection, and sustainable living practices.
-</p>
-</div>
-
-<div class="card">
-<h3>Public Awareness Campaigns</h3>
-<p>
-We promote awareness about environmental issues and encourage community members to take part in preserving local scenic resources.
-</p>
 </div>
 
 </section>
 
-<section id="volunteer">
-<h2>Volunteer Opportunities</h2>
+<section class="section" id="impact">
 
-<div class="card">
-<p>
-Volunteers are the heart of SCENIC EL DORADO INC. By joining our volunteer programs, individuals can directly contribute to community improvement and environmental protection.
-</p>
+<h2>Our Community Impact</h2>
 
 <p>
-Volunteer opportunities include:
+
+Through collaboration with community members, volunteers, and
+partner organizations, SCENIC EL DORADO INC continues to support
+projects that improve the quality of life for residents while
+protecting the natural beauty of the region.
+
 </p>
 
 <ul>
-<li>Community clean-up events</li>
-<li>Tree planting initiatives</li>
-<li>Educational outreach</li>
-<li>Event organization</li>
-<li>Environmental monitoring projects</li>
+
+<li>Environmental education initiatives</li>
+<li>Community beautification projects</li>
+<li>Public awareness campaigns</li>
+<li>Volunteer environmental programs</li>
+
 </ul>
 
-<button>Become a Volunteer</button>
+<p>
 
-</div>
+Our mission is rooted in the belief that strong communities and healthy
+environments go hand in hand. By working together, we can preserve
+the scenic character of El Dorado for generations to come.
+
+</p>
+
 </section>
 
-<section id="donate">
-<h2>Support Our Work</h2>
+<section class="section" id="donate">
 
-<div class="card">
-<p>
-SCENIC EL DORADO INC relies on donations and community support to continue its mission. Contributions help fund environmental projects, community programs, educational outreach, and conservation initiatives.
-</p>
+<h2>Support Our Mission</h2>
 
 <p>
-As a registered 501(c)(3) nonprofit organization, donations may be tax-deductible according to applicable laws.
+
+SCENIC EL DORADO INC relies on community support to continue our
+environmental and educational programs.
+
+As a registered **501(c)(3) nonprofit organization**, donations may
+be tax-deductible as allowed by U.S. law.
+
 </p>
 
-<button>Donate Now</button>
+<button>Donate</button>
 
-</div>
 </section>
 
-<section id="policies">
-<h2>Policies & Compliance</h2>
+<section class="section" id="contact">
 
-<div class="policy">
+<h2>Contact Us</h2>
 
-<h3>Privacy Policy</h3>
 <p>
-SCENIC EL DORADO INC respects the privacy of visitors and supporters. We do not sell or rent personal information to third parties. Any information submitted through this website is used only for communication, volunteer coordination, or donation processing.
+
+We welcome questions, volunteer inquiries, and partnership opportunities.
+
 </p>
 
-<h3>Terms of Use</h3>
 <p>
-By accessing this website, users agree to use the content for lawful and informational purposes only. Content may not be reproduced or distributed without permission from SCENIC EL DORADO INC.
-</p>
 
-<h3>Non-Discrimination Policy</h3>
-<p>
-SCENIC EL DORADO INC does not discriminate on the basis of race, religion, gender, sexual orientation, national origin, disability, or age in its programs, activities, or employment practices.
-</p>
-
-<h3>Accessibility Statement</h3>
-<p>
-We are committed to ensuring that our website is accessible to all users, including individuals with disabilities. We continually work to improve accessibility and usability for everyone.
-</p>
-
-<h3>Transparency & Accountability</h3>
-<p>
-SCENIC EL DORADO INC maintains transparency in its operations and financial management. The organization operates in compliance with applicable nonprofit regulations and strives to uphold the highest ethical standards.
-</p>
-
-</div>
-</section>
-
-<section id="contact">
-<h2>Contact Information</h2>
-
-<div class="contact">
-
-<p><strong>SCENIC EL DORADO INC</strong></p>
-
-<p>
+<strong>SCENIC EL DORADO INC</strong><br>
 5550 NW 20TH ST<br>
 EL DORADO, KS 67042<br>
 United States
+
 </p>
 
 <p>
+
 Email: info@SCENICELDORADO.org
+
 </p>
 
+</section>
+
+<section class="section">
+
+<div class="policy">
+
+<h2>Privacy Policy</h2>
+
 <p>
-For inquiries about volunteering, partnerships, or donations, please contact us via email.
+
+SCENIC EL DORADO INC respects your privacy and is committed to protecting
+personal information. We collect limited information necessary to operate
+our website, respond to inquiries, and improve our services.
+
+Information provided through contact forms or email communications
+is used solely for communication purposes and will not be sold or
+shared with third parties except when required by law.
+
 </p>
 
 </div>
+
+<div class="policy">
+
+<h2>Terms of Use</h2>
+
+<p>
+
+By using this website you agree to use it for lawful purposes only.
+Content provided on this website is intended for informational
+purposes related to the mission and activities of SCENIC EL DORADO INC.
+
+The organization reserves the right to update website content
+and policies as needed.
+
+</p>
+
+</div>
+
+<div class="policy">
+
+<h2>Non-Discrimination Policy</h2>
+
+<p>
+
+SCENIC EL DORADO INC does not discriminate on the basis of race,
+color, religion, gender, sexual orientation, national origin,
+age, disability, or any other protected status in any of its
+programs, services, or activities.
+
+</p>
+
+</div>
+
 </section>
 
 <footer>
 
-<p>© 2026 SCENIC EL DORADO INC. All rights reserved.</p>
+<div class="footer-grid">
+
+<div>
+
+<h3>SCENIC EL DORADO INC</h3>
 
 <p>
-SCENIC EL DORADO INC is a nonprofit organization recognized as tax-exempt under Section 501(c)(3) of the Internal Revenue Code.
+
+A nonprofit organization working to preserve natural beauty,
+support community engagement, and promote environmental
+stewardship.
+
 </p>
 
 <p>
-This website is maintained for informational and educational purposes in support of our nonprofit mission.
+
+501(c)(3) Nonprofit Organization
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>
+
+5550 NW 20TH ST<br>
+EL DORADO, KS 67042
+
+</p>
+
+<p>
+
+info@SCENICELDORADO.org
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Transparency</h3>
+
+<p>
+
+SCENIC EL DORADO INC operates as a charitable organization and
+is committed to transparency, ethical governance, and responsible
+stewardship of resources.
+
+</p>
+
+</div>
+
+</div>
+
+<p style="text-align:center;margin-top:30px;">
+
+© 2026 SCENIC EL DORADO INC. All Rights Reserved.
+
 </p>
 
 </footer>
