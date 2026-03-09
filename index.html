@@ -3,40 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FOREST LAWN CEMETERY is a 501(c)(3) nonprofit dedicated to preserving history and providing compassionate care to families in Bolivia, NC.">
-    <meta name="keywords" content="Forest Lawn Cemetery, nonprofit, 501c3, cemetery, Bolivia NC, history, memorials">
-    <meta name="author" content="FOREST LAWN CEMETERY">
+    <meta name="description" content="FOREST LAWN CEMETERY is a 501(c)(3) nonprofit organization serving the community in Bolivia, NC. Our mission is to provide serene and well-maintained cemetery grounds with compassionate services.">
+    <meta name="keywords" content="Forest Lawn Cemetery, nonprofit, 501(c)(3), cemetery, Bolivia NC, memorial services, burial, cremation">
     <title>FOREST LAWN CEMETERY</title>
-    <!-- CSS Styling -->
+
+    <!-- Internal CSS -->
     <style>
-        /* Reset */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-        body { line-height: 1.6; color: #333; background-color: #fdfcfb; }
+        header {
+            background-color: #004d00;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-        header { background: #2e4e2f; color: #fff; padding: 20px 0; text-align: center; }
-        header h1 { font-size: 2.5em; margin-bottom: 10px; }
-        header p { font-size: 1.2em; }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #006600;
+        }
 
-        nav { background: #3b6a3b; text-align: center; }
-        nav a { color: white; text-decoration: none; padding: 15px 20px; display: inline-block; }
-        nav a:hover { background: #2e4e2f; }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-        section { padding: 40px 20px; max-width: 1200px; margin: auto; }
+        nav a:hover {
+            background-color: #004d00;
+        }
 
-        h2 { color: #2e4e2f; margin-bottom: 20px; }
+        .hero {
+            position: relative;
+            max-width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
 
-        .hero { background: url('cemetery-hero.jpg') no-repeat center center/cover; height: 400px; display: flex; align-items: center; justify-content: center; color: #fff; text-shadow: 2px 2px #000; font-size: 2em; }
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 15s infinite;
+        }
 
-        .cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-        .card { background: #e6efe6; padding: 20px; border-radius: 10px; flex: 1 1 300px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .slides img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
 
-        footer { background: #2e4e2f; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+        @keyframes slide {
+            0% {transform: translateX(0%);}
+            33% {transform: translateX(-100%);}
+            66% {transform: translateX(-200%);}
+            100% {transform: translateX(0%);}
+        }
 
-        a.button { background: #3b6a3b; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; }
-        a.button:hover { background: #2e4e2f; }
-        
-        .policies { font-size: 0.9em; margin-top: 20px; }
+        .section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #004d00;
+        }
+
+        .section p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .images-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .images-grid img {
+            width: 30%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #004d00;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #aaffaa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .policies {
+            margin-top: 40px;
+        }
+
+        .policies a {
+            display: block;
+            margin-bottom: 5px;
+            color: #004d00;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -44,92 +137,121 @@
     <!-- Header -->
     <header>
         <h1>FOREST LAWN CEMETERY</h1>
-        <p>A 501(c)(3) Nonprofit Serving Bolivia, NC and Preserving History</p>
+        <p>A 501(c)(3) Nonprofit Organization</p>
     </header>
 
     <!-- Navigation -->
     <nav>
-        <a href="#about">About Us</a>
+        <a href="#about">About</a>
+        <a href="#mission">Mission</a>
         <a href="#services">Services</a>
-        <a href="#history">Our History</a>
-        <a href="#donate">Donate</a>
+        <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
         <a href="#policies">Policies</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        Honoring Loved Ones with Care and Respect
-    </section>
+    <!-- Hero Slideshow -->
+    <div class="hero">
+        <div class="slides">
+            <img src="https://via.placeholder.com/1200x500?text=Peaceful+Grounds+1" alt="Cemetery view 1">
+            <img src="https://via.placeholder.com/1200x500?text=Peaceful+Grounds+2" alt="Cemetery view 2">
+            <img src="https://via.placeholder.com/1200x500?text=Memorial+Garden" alt="Cemetery view 3">
+        </div>
+    </div>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section">
         <h2>About FOREST LAWN CEMETERY</h2>
-        <p>FOREST LAWN CEMETERY is a 501(c)(3) nonprofit dedicated to preserving the historical and cultural heritage of Bolivia, NC. We provide compassionate care to families seeking memorial services, maintaining serene grounds for reflection and remembrance. Our mission is to honor the lives of loved ones while serving the community with integrity and respect.</p>
-        <p>We are fully compliant with nonprofit regulations and proudly operate as a tax-exempt organization under the IRS.</p>
+        <p>
+            FOREST LAWN CEMETERY is a nonprofit 501(c)(3) organization dedicated to providing compassionate, respectful, and affordable burial and memorial services to families in Bolivia, North Carolina, and surrounding areas. 
+            Our team ensures well-maintained grounds, serene surroundings, and support to families during difficult times. Established with the goal of preserving dignity and heritage, FOREST LAWN CEMETERY has become a trusted name in the community.
+        </p>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section">
+        <h2>Our Mission</h2>
+        <p>
+            Our mission is to provide a peaceful, beautiful, and well-maintained final resting place while supporting the families we serve with compassion and respect. As a 501(c)(3) nonprofit, we rely on community support and donations to continue our work and enhance our grounds, programs, and services.
+        </p>
     </section>
 
     <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Burial Services</h3>
-                <p>Comprehensive burial options with professional support to ensure every service meets your family's needs.</p>
-            </div>
-            <div class="card">
-                <h3>Memorial Services</h3>
-                <p>Personalized memorials and tributes to celebrate the life of your loved ones.</p>
-            </div>
-            <div class="card">
-                <h3>Historical Preservation</h3>
-                <p>Maintaining and documenting the history of our cemetery to honor generations past and future.</p>
-            </div>
+    <section id="services" class="section">
+        <h2>Services We Provide</h2>
+        <p>
+            FOREST LAWN CEMETERY offers a wide range of services, including:
+        </p>
+        <ul>
+            <li>Traditional burial services</li>
+            <li>Cremation and memorial services</li>
+            <li>Monument and gravestone placement</li>
+            <li>Grounds maintenance and beautification</li>
+            <li>Support for families in planning memorials</li>
+        </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <div class="images-grid">
+            <img src="https://via.placeholder.com/400x200?text=Garden+1" alt="Garden 1">
+            <img src="https://via.placeholder.com/400x200?text=Garden+2" alt="Garden 2">
+            <img src="https://via.placeholder.com/400x200?text=Memorial+Stone" alt="Memorial Stone">
+            <img src="https://via.placeholder.com/400x200?text=Pathway" alt="Pathway">
+            <img src="https://via.placeholder.com/400x200?text=Tree+View" alt="Tree View">
+            <img src="https://via.placeholder.com/400x200?text=Fountain" alt="Fountain">
         </div>
     </section>
 
-    <!-- History Section -->
-    <section id="history">
-        <h2>Our History</h2>
-        <p>FOREST LAWN CEMETERY was founded decades ago to serve the Bolivia, NC community. Over the years, we have grown into a respected nonprofit organization dedicated to maintaining a tranquil, safe, and welcoming environment. Our volunteers and staff work tirelessly to preserve historical records, restore monuments, and ensure that our cemetery remains a sacred place for reflection and remembrance.</p>
-    </section>
-
-    <!-- Donation Section -->
-    <section id="donate">
-        <h2>Support Our Mission</h2>
-        <p>Your donations help us maintain the cemetery grounds, preserve history, and provide compassionate services. As a 501(c)(3) nonprofit, your contributions are tax-deductible.</p>
-        <a class="button" href="donate.html">Donate Now</a>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact Us</h2>
-        <p>FOREST LAWN CEMETERY</p>
-        <p>PO BOX 189, Bolivia, NC 28422-0189</p>
-        <p>Email: <a href="mailto:info@FORESTLAWNCEMETERY.org">info@FORESTLAWNCEMETERY.org</a></p>
-        <p>Phone: (Insert phone number here)</p>
+        <div class="contact-info">
+            <p>PO BOX 189, Bolivia, NC 28422-0189</p>
+            <p>Email: <a href="mailto:info@FORESTLAWNCEMETERY.org">info@FORESTLAWNCEMETERY.org</a></p>
+            <p>Phone: (Replace with phone number if available)</p>
+        </div>
     </section>
 
     <!-- Policies Section -->
-    <section id="policies">
-        <h2>Policies</h2>
+    <section id="policies" class="section">
+        <h2>Our Policies</h2>
         <div class="policies">
-            <h3>Privacy Policy</h3>
-            <p>Your privacy is important to us. Any personal data collected on our website is used solely for nonprofit purposes, including donations and communication, in compliance with Google Ad Grants requirements.</p>
-
-            <h3>Terms of Use</h3>
-            <p>Visitors agree to use this website for informational purposes only. All content is property of FOREST LAWN CEMETERY and may not be reproduced without permission.</p>
-
-            <h3>Google Ad Grants & Workspace Compliance</h3>
-            <p>Our nonprofit website complies with Google Ad Grants policies, including clear nonprofit mission, transparency, and easy navigation. Email communications are handled through Google Workspace, ensuring security and professional standards.</p>
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#terms-of-use">Terms of Use</a>
+            <a href="#donation-policy">Donation Policy</a>
+            <a href="#accessibility-policy">Accessibility Policy</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 FOREST LAWN CEMETERY | All Rights Reserved</p>
-        <p>PO BOX 189, Bolivia, NC 28422-0189 | Email: <a href="mailto:info@FORESTLAWNCEMETERY.org" style="color:white;">info@FORESTLAWNCEMETERY.org</a></p>
+        <p>&copy; 2026 FOREST LAWN CEMETERY. All Rights Reserved.</p>
+        <p>Nonprofit 501(c)(3) Organization | Serving Bolivia, NC and surrounding areas.</p>
+        <p><a href="#contact">Contact Us</a></p>
     </footer>
+
+    <!-- Policies Content (hidden sections for links) -->
+    <section id="privacy-policy" class="section">
+        <h2>Privacy Policy</h2>
+        <p>FOREST LAWN CEMETERY respects your privacy. We do not share personal information without consent. All online donations are encrypted and securely processed. We comply with applicable laws and Google Ad Grants policies regarding data privacy.</p>
+    </section>
+
+    <section id="terms-of-use" class="section">
+        <h2>Terms of Use</h2>
+        <p>By using this website, you agree to our terms of use. Content provided is for informational purposes and should not replace professional advice. Unauthorized copying or reproduction is prohibited. We comply with Google Workspace terms and policies.</p>
+    </section>
+
+    <section id="donation-policy" class="section">
+        <h2>Donation Policy</h2>
+        <p>All donations received by FOREST LAWN CEMETERY are used to maintain cemetery grounds, improve facilities, and support our nonprofit mission. Donations are tax-deductible to the extent allowed by law.</p>
+    </section>
+
+    <section id="accessibility-policy" class="section">
+        <h2>Accessibility Policy</h2>
+        <p>We are committed to ensuring digital accessibility for all users. Our website follows best practices to be compatible with screen readers and assistive devices. If you encounter accessibility issues, contact us at <a href="mailto:info@FORESTLAWNCEMETERY.org">info@FORESTLAWNCEMETERY.org</a>.</p>
+    </section>
 
 </body>
 </html>
