@@ -1,455 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FOREST LAWN CEMETERY is a 501(c)(3) nonprofit dedicated to preserving history and providing compassionate care to families in Bolivia, NC.">
+    <meta name="keywords" content="Forest Lawn Cemetery, nonprofit, 501c3, cemetery, Bolivia NC, history, memorials">
+    <meta name="author" content="FOREST LAWN CEMETERY">
+    <title>FOREST LAWN CEMETERY</title>
+    <!-- CSS Styling -->
+    <style>
+        /* Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        body { line-height: 1.6; color: #333; background-color: #fdfcfb; }
 
-<title>SCENIC EL DORADO INC | Community & Environmental Nonprofit</title>
+        header { background: #2e4e2f; color: #fff; padding: 20px 0; text-align: center; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header p { font-size: 1.2em; }
 
-<meta name="description" content="SCENIC EL DORADO INC is a 501(c)(3) nonprofit organization dedicated to protecting natural beauty, supporting community development, and promoting environmental stewardship in El Dorado, Kansas.">
+        nav { background: #3b6a3b; text-align: center; }
+        nav a { color: white; text-decoration: none; padding: 15px 20px; display: inline-block; }
+        nav a:hover { background: #2e4e2f; }
 
-<meta name="keywords" content="El Dorado nonprofit, environmental nonprofit Kansas, Scenic El Dorado, community development Kansas, 501c3 nonprofit">
+        section { padding: 40px 20px; max-width: 1200px; margin: auto; }
 
-<link rel="icon" type="image/svg+xml" href="#favicon">
+        h2 { color: #2e4e2f; margin-bottom: 20px; }
 
-<style>
+        .hero { background: url('cemetery-hero.jpg') no-repeat center center/cover; height: 400px; display: flex; align-items: center; justify-content: center; color: #fff; text-shadow: 2px 2px #000; font-size: 2em; }
 
-body{
-font-family:Arial,Helvetica,sans-serif;
-margin:0;
-background:#f4f7f6;
-color:#333;
-line-height:1.6;
-}
+        .cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .card { background: #e6efe6; padding: 20px; border-radius: 10px; flex: 1 1 300px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 
-header{
-background:#0a5c44;
-color:white;
-padding:20px;
-}
+        footer { background: #2e4e2f; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-max-width:1200px;
-margin:auto;
-}
-
-nav ul{
-list-style:none;
-display:flex;
-gap:20px;
-padding:0;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-.hero{
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
-background-size:cover;
-color:white;
-padding:120px 20px;
-text-align:center;
-}
-
-.section{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
-}
-
-.section h2{
-color:#0a5c44;
-margin-bottom:20px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
-}
-
-footer{
-background:#0a5c44;
-color:white;
-padding:40px 20px;
-}
-
-.footer-grid{
-max-width:1100px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.policy{
-background:white;
-padding:40px;
-margin-top:40px;
-border-radius:8px;
-}
-
-button{
-background:#0a5c44;
-color:white;
-padding:12px 25px;
-border:none;
-border-radius:5px;
-cursor:pointer;
-font-size:16px;
-}
-
-button:hover{
-background:#083f30;
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-font-size:22px;
-font-weight:bold;
-}
-
-</style>
+        a.button { background: #3b6a3b; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; }
+        a.button:hover { background: #2e4e2f; }
+        
+        .policies { font-size: 0.9em; margin-top: 20px; }
+    </style>
 </head>
-
 <body>
 
-<header>
-
-<nav>
-
-<div class="logo">
-
-<svg width="40" height="40" viewBox="0 0 100 100">
-<circle cx="50" cy="50" r="45" fill="#ffffff"/>
-<path d="M10 60 L40 30 L60 55 L80 25 L90 70 L10 70 Z" fill="#0a5c44"/>
-</svg>
-
-SCENIC EL DORADO INC
-
-</div>
-
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#programs">Programs</a></li>
-<li><a href="#impact">Impact</a></li>
-<li><a href="#donate">Support</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h1>Protecting Natural Beauty & Strengthening Community</h1>
-
-<p>
-SCENIC EL DORADO INC is a nonprofit organization committed to protecting
-natural landscapes, promoting environmental stewardship, and supporting
-community development initiatives in El Dorado, Kansas and surrounding areas.
-</p>
-
-<a href="#donate">
-<button>Support Our Mission</button>
-</a>
-
-</section>
-
-<section class="section" id="about">
-
-<h2>About Our Nonprofit</h2>
-
-<p>
-
-SCENIC EL DORADO INC is a recognized **501(c)(3) nonprofit organization**
-dedicated to preserving natural environments, improving public spaces,
-and encouraging sustainable community growth.
-
-Our organization works with local residents, volunteers,
-community leaders, and environmental advocates to promote responsible
-development while protecting the scenic landscapes that define our region.
-
-</p>
-
-<p>
-
-Through education, conservation initiatives, and community engagement,
-we strive to ensure that future generations can enjoy the natural beauty
-and cultural heritage of El Dorado and the surrounding Kansas communities.
-
-</p>
-
-<p>
-
-As a nonprofit organization, SCENIC EL DORADO INC operates exclusively
-for charitable, educational, and environmental purposes in accordance
-with U.S. nonprofit regulations governing tax-exempt 501(c)(3) organizations.
-
-</p>
-
-</section>
-
-<section class="section" id="programs">
-
-<h2>Our Programs</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Environmental Preservation</h3>
-
-<p>
-We support conservation projects designed to protect local landscapes,
-green spaces, and wildlife habitats. Our work focuses on long-term
-environmental sustainability and responsible land stewardship.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Community Engagement</h3>
-
-<p>
-We organize volunteer opportunities, educational workshops, and public
-events that encourage residents to participate in community development
-and environmental protection.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Education & Awareness</h3>
-
-<p>
-Our educational outreach programs provide resources that promote
-sustainable practices, environmental awareness, and civic engagement.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section" id="impact">
-
-<h2>Our Community Impact</h2>
-
-<p>
-
-Through collaboration with community members, volunteers, and
-partner organizations, SCENIC EL DORADO INC continues to support
-projects that improve the quality of life for residents while
-protecting the natural beauty of the region.
-
-</p>
-
-<ul>
-
-<li>Environmental education initiatives</li>
-<li>Community beautification projects</li>
-<li>Public awareness campaigns</li>
-<li>Volunteer environmental programs</li>
-
-</ul>
-
-<p>
-
-Our mission is rooted in the belief that strong communities and healthy
-environments go hand in hand. By working together, we can preserve
-the scenic character of El Dorado for generations to come.
-
-</p>
-
-</section>
-
-<section class="section" id="donate">
-
-<h2>Support Our Mission</h2>
-
-<p>
-
-SCENIC EL DORADO INC relies on community support to continue our
-environmental and educational programs.
-
-As a registered **501(c)(3) nonprofit organization**, donations may
-be tax-deductible as allowed by U.S. law.
-
-</p>
-
-<button>Donate</button>
-
-</section>
-
-<section class="section" id="contact">
-
-<h2>Contact Us</h2>
-
-<p>
-
-We welcome questions, volunteer inquiries, and partnership opportunities.
-
-</p>
-
-<p>
-
-<strong>SCENIC EL DORADO INC</strong><br>
-5550 NW 20TH ST<br>
-EL DORADO, KS 67042<br>
-United States
-
-</p>
-
-<p>
-
-Email: info@SCENICELDORADO.org
-
-</p>
-
-</section>
-
-<section class="section">
-
-<div class="policy">
-
-<h2>Privacy Policy</h2>
-
-<p>
-
-SCENIC EL DORADO INC respects your privacy and is committed to protecting
-personal information. We collect limited information necessary to operate
-our website, respond to inquiries, and improve our services.
-
-Information provided through contact forms or email communications
-is used solely for communication purposes and will not be sold or
-shared with third parties except when required by law.
-
-</p>
-
-</div>
-
-<div class="policy">
-
-<h2>Terms of Use</h2>
-
-<p>
-
-By using this website you agree to use it for lawful purposes only.
-Content provided on this website is intended for informational
-purposes related to the mission and activities of SCENIC EL DORADO INC.
-
-The organization reserves the right to update website content
-and policies as needed.
-
-</p>
-
-</div>
-
-<div class="policy">
-
-<h2>Non-Discrimination Policy</h2>
-
-<p>
-
-SCENIC EL DORADO INC does not discriminate on the basis of race,
-color, religion, gender, sexual orientation, national origin,
-age, disability, or any other protected status in any of its
-programs, services, or activities.
-
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-grid">
-
-<div>
-
-<h3>SCENIC EL DORADO INC</h3>
-
-<p>
-
-A nonprofit organization working to preserve natural beauty,
-support community engagement, and promote environmental
-stewardship.
-
-</p>
-
-<p>
-
-501(c)(3) Nonprofit Organization
-
-</p>
-
-</div>
-
-<div>
-
-<h3>Contact</h3>
-
-<p>
-
-5550 NW 20TH ST<br>
-EL DORADO, KS 67042
-
-</p>
-
-<p>
-
-info@SCENICELDORADO.org
-
-</p>
-
-</div>
-
-<div>
-
-<h3>Transparency</h3>
-
-<p>
-
-SCENIC EL DORADO INC operates as a charitable organization and
-is committed to transparency, ethical governance, and responsible
-stewardship of resources.
-
-</p>
-
-</div>
-
-</div>
-
-<p style="text-align:center;margin-top:30px;">
-
-© 2026 SCENIC EL DORADO INC. All Rights Reserved.
-
-</p>
-
-</footer>
+    <!-- Header -->
+    <header>
+        <h1>FOREST LAWN CEMETERY</h1>
+        <p>A 501(c)(3) Nonprofit Serving Bolivia, NC and Preserving History</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#history">Our History</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+        <a href="#policies">Policies</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        Honoring Loved Ones with Care and Respect
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About FOREST LAWN CEMETERY</h2>
+        <p>FOREST LAWN CEMETERY is a 501(c)(3) nonprofit dedicated to preserving the historical and cultural heritage of Bolivia, NC. We provide compassionate care to families seeking memorial services, maintaining serene grounds for reflection and remembrance. Our mission is to honor the lives of loved ones while serving the community with integrity and respect.</p>
+        <p>We are fully compliant with nonprofit regulations and proudly operate as a tax-exempt organization under the IRS.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Burial Services</h3>
+                <p>Comprehensive burial options with professional support to ensure every service meets your family's needs.</p>
+            </div>
+            <div class="card">
+                <h3>Memorial Services</h3>
+                <p>Personalized memorials and tributes to celebrate the life of your loved ones.</p>
+            </div>
+            <div class="card">
+                <h3>Historical Preservation</h3>
+                <p>Maintaining and documenting the history of our cemetery to honor generations past and future.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history">
+        <h2>Our History</h2>
+        <p>FOREST LAWN CEMETERY was founded decades ago to serve the Bolivia, NC community. Over the years, we have grown into a respected nonprofit organization dedicated to maintaining a tranquil, safe, and welcoming environment. Our volunteers and staff work tirelessly to preserve historical records, restore monuments, and ensure that our cemetery remains a sacred place for reflection and remembrance.</p>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate">
+        <h2>Support Our Mission</h2>
+        <p>Your donations help us maintain the cemetery grounds, preserve history, and provide compassionate services. As a 501(c)(3) nonprofit, your contributions are tax-deductible.</p>
+        <a class="button" href="donate.html">Donate Now</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>FOREST LAWN CEMETERY</p>
+        <p>PO BOX 189, Bolivia, NC 28422-0189</p>
+        <p>Email: <a href="mailto:info@FORESTLAWNCEMETERY.org">info@FORESTLAWNCEMETERY.org</a></p>
+        <p>Phone: (Insert phone number here)</p>
+    </section>
+
+    <!-- Policies Section -->
+    <section id="policies">
+        <h2>Policies</h2>
+        <div class="policies">
+            <h3>Privacy Policy</h3>
+            <p>Your privacy is important to us. Any personal data collected on our website is used solely for nonprofit purposes, including donations and communication, in compliance with Google Ad Grants requirements.</p>
+
+            <h3>Terms of Use</h3>
+            <p>Visitors agree to use this website for informational purposes only. All content is property of FOREST LAWN CEMETERY and may not be reproduced without permission.</p>
+
+            <h3>Google Ad Grants & Workspace Compliance</h3>
+            <p>Our nonprofit website complies with Google Ad Grants policies, including clear nonprofit mission, transparency, and easy navigation. Email communications are handled through Google Workspace, ensuring security and professional standards.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 FOREST LAWN CEMETERY | All Rights Reserved</p>
+        <p>PO BOX 189, Bolivia, NC 28422-0189 | Email: <a href="mailto:info@FORESTLAWNCEMETERY.org" style="color:white;">info@FORESTLAWNCEMETERY.org</a></p>
+    </footer>
 
 </body>
 </html>
